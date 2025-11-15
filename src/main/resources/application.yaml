@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: spring-mybatis
@@ -5,3 +8,11 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+
+  datasource:
+    url: jdbc:postgresql://localhost:7070/mybatis_tutorial_db
+    username: mybatis
+    password: mypassword
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

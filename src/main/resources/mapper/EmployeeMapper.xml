@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mybatis.spring_mybatis.mapper.EmployeeMapper">
+
+    <insert id="insertEmployee" parameterType="com.mybatis.spring_mybatis.model.Employee" useGeneratedKeys="true"
+            keyProperty="employeeId">
+        INSERT INTO Employee(
+        fullName,
+        email,
+        gender,
+        hobbies,
+        country,
+        address
+        )
+        VALUES
+        (
+        #{fullName},
+        #{email},
+        #{gender},
+        #{hobbies},
+        #{country},
+        #{address}
+        )
+    </insert>
+
+
+    <select id="findAllEmployeesPaginated" resultType="com.mybatis.spring_mybatis.model.Employee">
+        SELECT employeeId, fullName, email
+        FROM Employee
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+
+</mapper>

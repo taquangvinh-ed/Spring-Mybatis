@@ -1,0 +1,22 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+
+
+<!--<configuration>-->
+<!--    <typeAliases>-->
+<!--         <typeAlias type="com/mybatis/spring_mybatis/entity/Employee.java" alias="employee"/>-->
+<!--    </typeAliases>-->
+<!--<evironments default="development">-->
+<!--<transactionManager type="JDBC" />-->
+<!--    <dataSource type="POOLED">-->
+<!--        <property name="driver" value="com.postgres.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:postgresql://localhost:7070/mybatis_tutorial_db"/>-->
+<!--        <property name="username" value="mybatis"/>-->
+<!--        <property name="password" value="mypassword"/>-->
+<!--    </dataSource>-->
+<!--</evironments>-->
+<!--    <mappers>-->
+<!--        <mapper resource="src/main/resources/mybatis-config.xml"/>-->
+<!--    </mappers>-->
+<!--</configuration>-->
+

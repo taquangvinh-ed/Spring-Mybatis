@@ -27,8 +27,11 @@ dependencies {
 	implementation("org.apache.tomcat.embed:tomcat-embed-jasper")
 	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.5")
 	runtimeOnly("org.postgresql:postgresql")
-	implementation("hikari-cp:hikari-cp:3.3.0")
-}
+	implementation("com.zaxxer:HikariCP:7.0.2")
+	compileOnly("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok")
+	implementation("org.mapstruct:mapstruct:1.6.3")
+	annotationProcessor("org.mapstruct:mapstruct-processor:1.6.3")}
 
 tasks.withType<Test> {
 	useJUnitPlatform()

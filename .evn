@@ -1,0 +1,3 @@
+DATABASE_URL=jdbc:postgresql://localhost:7070/mybatis_tutorial_db
+DATABASE_USERNAME=mybatis
+DATABASE_PASSWORD=mypassword
